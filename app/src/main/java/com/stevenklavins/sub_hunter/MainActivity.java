@@ -53,8 +53,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void newGame () {
-        Log.d("Debugging", "newGame");
+        Random random = new Random();
+        subHorizontalPosition = random.nextInt(gridWidth);
+        subVerticalPosition = random.nextInt(gridHeight);
+        shotsTaken = 0;
 
+        Log.d("Debugging", "newGame");
     }
 
     void draw () {
@@ -71,12 +75,10 @@ public class MainActivity extends AppCompatActivity {
 
     void takeShot () {
         Log.d("Debugging", "takeShot");
-
     }
 
     void boom () {
         Log.d("Debugging", "boom");
-
     }
 
     void  printDebugging () {
