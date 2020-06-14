@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     int distanceFromSub;
     boolean debugging = true;
 
+    ImageView gameView;
+    Bitmap blankBitmap;
+    Canvas canvas;
+    Paint paint;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
