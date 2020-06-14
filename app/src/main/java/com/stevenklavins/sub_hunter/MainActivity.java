@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     void draw () {
         Log.d("Debugging", "draw");
+        printDebugging();
     }
 
     @Override
@@ -79,6 +80,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void  printDebugging () {
-
+        Log.d("Horizontal pixels", "" + numberOfHorizontalPixels);
+        Log.d("Vertical pixels", "" + numberOfVerticalPixels);
+        Log.d("Block size", "" + blockSize);
+        Log.d("Grid width", "" + gridWidth);
+        Log.d("Grid height", "" + gridHeight);
+        Log.d("Horizontal touched", "" + horizontalTouched);
+        Log.d("Vertical touched", "" + verticalTouched);
+        Log.d("Sub horizontal position", "" + subHorizontalPosition);
+        Log.d("Sub vertical position", "" + subVerticalPosition);
+        Log.d("Hit", "" + hit);
+        Log.d("Shots taken", "" + shotsTaken);
+        Log.d("Debugging", "" + debugging);
+        Log.d("Distance from sub", "" + distanceFromSub);
     }
 }
