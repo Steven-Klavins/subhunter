@@ -20,26 +20,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d("Debugging", "onCreate");
+        newGame();
+        draw();
     }
 
     void newGame () {
+        Log.d("Debugging", "newGame");
 
     }
 
     void draw () {
-
+        Log.d("Debugging", "draw");
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        return super.onTouchEvent(event);
+        Log.d("Debugging", "onTouchEvent");
+        takeShot();
+        return true;
     }
 
     void takeShot () {
+        Log.d("Debugging", "takeShot");
 
     }
 
     void boom () {
+        Log.d("Debugging", "boom");
 
     }
 
