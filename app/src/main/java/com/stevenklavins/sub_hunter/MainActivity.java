@@ -73,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void draw () {
+        gameView.setImageBitmap(blankBitmap);
+        canvas.drawColor(Color.argb(255,255,255,255));
         Log.d("Debugging", "draw");
         printDebugging();
     }
