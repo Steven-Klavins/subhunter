@@ -16,6 +16,21 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    int numberOfHorizontalPixels;
+    int numberOfVerticalPixels;
+    int blockSize;
+    int gridWidth = 40;
+    int gridHeight;
+    float horizontalTouched = -100;
+    float verticalTouched = -100;
+    int subHorizontalPosition;
+    int subVerticalPosition;
+    boolean hit = false;
+    int shotsTaken;
+    int distanceFromSub;
+    boolean debugging = true;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
