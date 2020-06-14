@@ -49,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
         blockSize = numberOfHorizontalPixels/gridWidth;
         gridHeight = numberOfVerticalPixels/blockSize;
 
+        blankBitmap = Bitmap.createBitmap(numberOfHorizontalPixels,
+        numberOfVerticalPixels, Bitmap.Config.ARGB_8888);
+        canvas = new Canvas(blankBitmap);
+        gameView = new ImageView(this);
+        paint = new Paint();
+
         setContentView(R.layout.activity_main);
 
         Log.d("Debugging", "onCreate");
