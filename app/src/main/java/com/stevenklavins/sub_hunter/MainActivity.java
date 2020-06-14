@@ -34,8 +34,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
+        numberOfHorizontalPixels = size.x;
+        numberOfVerticalPixels = size.y;
+        blockSize = numberOfHorizontalPixels/gridWidth;
+        gridHeight = numberOfVerticalPixels/blockSize;
+
         setContentView(R.layout.activity_main);
+
         Log.d("Debugging", "onCreate");
+
         newGame();
         draw();
     }
